@@ -27,7 +27,7 @@
                (eval fn-sym))]
     (func)))
 
-(defactivity com.example.multidex-issue.main.MainActivity
+(defactivity com.example.multidex_issue.MainActivity
   :key :main
 
   (onCreate [this bundle]

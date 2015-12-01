@@ -37,10 +37,13 @@
   :android {;; Specify the path to the Android SDK directory.
             ;; :sdk-path "/home/user/path/to/android-sdk/"
 
+            :multi-dex true
+            :multi-dex-proguard-conf-path "proguard-multi-dex.cfg"
             ;; Try increasing this value if dexer fails with
             ;; OutOfMemoryException. Set the value according to your
             ;; available RAM.
-            :dex-opts ["-JXmx4096M" "--incremental"]
+;            :dex-opts ["-JXmx4096M" "--incremental"]
+            :dex-opts ["-JXmx4096M" "--num-threads=4"]
 
             :target-version "15"
             :aot-exclude-ns ["clojure.parallel" "clojure.core.reducers"
