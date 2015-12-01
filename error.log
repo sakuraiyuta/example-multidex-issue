@@ -1,0 +1,21 @@
+12-01 19:33:57.202: E/AndroidRuntime(1607): FATAL EXCEPTION: main
+12-01 19:33:57.202: E/AndroidRuntime(1607): java.lang.RuntimeException: Unable to instantiate application neko.App: java.lang.ClassNotFoundException: Didn't find class "neko.App" on path: DexPathList[[zip file "/data/app/com.example.multidex_issue.debug-2.apk"],nativeLibraryDirectories=[/data/app-lib/com.example.multidex_issue.debug-2, /system/lib]]
+12-01 19:33:57.202: E/AndroidRuntime(1607): 	at android.app.LoadedApk.makeApplication(LoadedApk.java:509)
+12-01 19:33:57.202: E/AndroidRuntime(1607): 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4417)
+12-01 19:33:57.202: E/AndroidRuntime(1607): 	at android.app.ActivityThread.access$1300(ActivityThread.java:141)
+12-01 19:33:57.202: E/AndroidRuntime(1607): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1316)
+12-01 19:33:57.202: E/AndroidRuntime(1607): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+12-01 19:33:57.202: E/AndroidRuntime(1607): 	at android.os.Looper.loop(Looper.java:137)
+12-01 19:33:57.202: E/AndroidRuntime(1607): 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+12-01 19:33:57.202: E/AndroidRuntime(1607): 	at java.lang.reflect.Method.invokeNative(Native Method)
+12-01 19:33:57.202: E/AndroidRuntime(1607): 	at java.lang.reflect.Method.invoke(Method.java:525)
+12-01 19:33:57.202: E/AndroidRuntime(1607): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+12-01 19:33:57.202: E/AndroidRuntime(1607): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+12-01 19:33:57.202: E/AndroidRuntime(1607): 	at dalvik.system.NativeStart.main(Native Method)
+12-01 19:33:57.202: E/AndroidRuntime(1607): Caused by: java.lang.ClassNotFoundException: Didn't find class "neko.App" on path: DexPathList[[zip file "/data/app/com.example.multidex_issue.debug-2.apk"],nativeLibraryDirectories=[/data/app-lib/com.example.multidex_issue.debug-2, /system/lib]]
+12-01 19:33:57.202: E/AndroidRuntime(1607): 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:53)
+12-01 19:33:57.202: E/AndroidRuntime(1607): 	at java.lang.ClassLoader.loadClass(ClassLoader.java:501)
+12-01 19:33:57.202: E/AndroidRuntime(1607): 	at java.lang.ClassLoader.loadClass(ClassLoader.java:461)
+12-01 19:33:57.202: E/AndroidRuntime(1607): 	at android.app.Instrumentation.newApplication(Instrumentation.java:975)
+12-01 19:33:57.202: E/AndroidRuntime(1607): 	at android.app.LoadedApk.makeApplication(LoadedApk.java:504)
+12-01 19:33:57.202: E/AndroidRuntime(1607): 	... 11 more
