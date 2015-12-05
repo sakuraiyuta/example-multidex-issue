@@ -38,7 +38,7 @@
             ;; :sdk-path "/home/user/path/to/android-sdk/"
 
             :multi-dex true
-            :multi-dex-proguard-conf-path "proguard-multi-dex.cfg"
+            :multi-dex-proguard-conf-path "build/proguard-multi-dex.cfg"
             ;; Try increasing this value if dexer fails with
             ;; OutOfMemoryException. Set the value according to your
             ;; available RAM.
